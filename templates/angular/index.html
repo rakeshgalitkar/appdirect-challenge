@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>  
+		<meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	     <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+         <link rel="stylesheet" href="lib/bootstrap-daterangepicker/daterangepicker.css"/>
+         <link rel="stylesheet" href="css/jquery-ui.css" type="text/css" />
+	     <link rel="stylesheet" href="css/style.css" type="text/css" />
+
+	    <title>App-Direct Challenge</title>
+    </head>
+	<body ng-app="challengeApp">
+	    <div class="main">
+	        <div ng-view></div>
+	    </div>
+ 
+        <!--load libs-->
+        <script type="text/javascript"  src="lib/jquery/jquery.min.js"></script>  
+        <script type="text/javascript"  src="lib/jquery/jquery-ui.js"></script>  
+        <script type="text/javascript"  src="lib/bootstrap/js/bootstrap.min.js"></script>
+        <script src="lib/angular/angular.js"></script>
+        <script src="lib/angular/angular-route.js"></script>                
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-sanitize/1.5.8/angular-sanitize.js"></script>
+        <script src="lib/moment.min.js"></script>                
+        <script src="lib/bootstrap-daterangepicker/daterangepicker.js"></script>
+        <script src="lib/angular-daterangepicker-master/js/angular-daterangepicker.js"></script>
+
+        <!--load app files-->
+        <script src="scripts/config.js"></script>
+        <script src="scripts/app.js"></script>
+        
+        <!--load app controllers-->
+		<script src="scripts/controllers/homeCtrl.js"></script>
+
+        <!--load services-->
+        <script src="scripts/services/twitterService.js"></script>        
+        <script src="scripts/services/storageService.js"></script>        
+        
+        <!--load directives -->
+        <script src="scripts/directives/tweetsDirective.js"></script>        
+    
+    </body>
+
+</html> 

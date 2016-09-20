@@ -1,0 +1,43 @@
+<div id="mainWindow" ng-init="init()">
+	<div class="container-fluid">
+	
+	<div class="row edit-putton-panel" ng-show="!editMode">
+		<button class="btn btn-warning" ng-click="toggleEditMode()">
+			<span class="glyphicon glyphicon-pencil"></span>
+			Edit
+		</button>
+	</div>
+	<div class="row edit-panel" ng-show="editMode">
+		<div class="col-xs-6 col-md-4">
+			<strong>Date Range :</strong><br/>
+			<input date-range-picker class="form-control date-picker" type="text" ng-model="datePicker.date"  />	
+		</div>
+		<div class="col-xs-6 col-md-4">
+			<strong>Number of Tweets Per Column:</strong><br/>
+			<input type="number"  class="form-control count" ng-model="numTweets" min="1" max="100">
+			<div ng-show="numError" class="error">Please enter value between 1-100</div>
+		</div>
+		<div class="col-xs-6 col-md-4">
+			<br/>
+			<button class="btn btn-info" ng-click="applyFilters()">Apply</button>
+			<button class="btn" ng-click="toggleEditMode();">Cancel</button>
+		</div>
+
+		<div class="clearfix"></div>
+		<div class="message">
+			You can change the column order by dragging the columns.
+		</div>
+	</div>
+
+	<div class="row">
+		<ul id="sortable">
+		  <li class="ui-state-default" ng-repeat="name in screenNames" rel="{{name}}">
+		  	<div class="col">
+	    		<tweets name="{{name}}"></tweets>
+	    	</div>
+		  </li>
+		</ul>
+	</div>
+
+	</div>
+</div>

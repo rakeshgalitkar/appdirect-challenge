@@ -1,0 +1,12 @@
+{
+  "name": "appdirect-challenge",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "http-server": "^0.9.0",
+    "twitter-proxy": "^2.0.0"
+  },
+  "scripts": {
+    "start": "node server.js"
+  }
+}

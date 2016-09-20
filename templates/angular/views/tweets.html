@@ -1,0 +1,30 @@
+<div class="tweet-container">
+	<div ng-show="wait" style="text-align:center;"><img src="images/ajax-loader.gif"></div>
+	<div class="tweets" ng-repeat="item in tweets" ng-show="tweets.length">
+		<div class="pull-left profile-image tweet-col1">
+			<img src="{{item.user.profile_image_url}}">
+		</div>
+		<div class="pull-left tweet-col2">
+			<span class="profile-name">{{item.user.screen_name}}</span>
+			<span class="created-date">{{item.created_at | formatDate}}</span>
+			<div ng-bind-html="item.text | formatTweet" ></div>
+			<div ng-if="item.extended_entities.media[0]">
+				<a href="{{item.extended_entities.media[0].url}}">
+					<img class="tweet-img" src="{{item.extended_entities.media[0].media_url}}">
+				</a>
+			</div>
+			<div class="status">
+				<span class="retweet">
+					<span class="glyphicon glyphicon-retweet"></span>
+					{{item.retweet_count}}
+				</span>
+				<span class="love">
+					<span class="glyphicon glyphicon-heart"></span>
+					{{item.favorite_count}}
+				</span>
+			</div>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+	<div ng-show="noTweets">No Tweets to display !!!</div>
+<div>

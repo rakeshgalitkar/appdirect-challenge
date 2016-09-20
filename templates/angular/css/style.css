@@ -1,0 +1,112 @@
+
+html,.main{
+	background:  #f5f8fa;
+}
+
+.tweets{
+	background: #fff;
+}
+
+#col1,#col2,#col3{
+background:transparent;
+}
+
+.tweet-container .tweets{
+	margin-bottom: 10px;
+    border-radius: 10px;
+    border: 1px solid #DADADA;
+    padding: 10px;
+}
+
+.tweet-container{
+	/*border: 1px solid #DADADA;*/
+    padding: 10px;
+}
+
+.tweet-container .highlight{
+	color : #1b95e0 !important;
+}
+
+.profile-name{
+	font-weight: bold;
+}
+
+.created-date{
+	color : #8899a6;
+}
+
+.tweet-col1{
+	width: 10%;
+}
+
+.tweet-col2{
+	width:85%;
+}
+
+.status{
+	margin-top: 10px;
+}
+
+.retweet, .love{
+	color:#8899a6;
+	    margin-right: 45px;
+    font-size: 17px;
+}
+
+.retweet{
+	color: #19cf86;
+}
+
+.love{
+	color: #e81c4f;;
+}
+
+.edit-panel{
+     background: #FFF !important;
+    padding: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #DADADA;
+    box-shadow: black;
+    box-shadow: 5px 5px 5px #888;
+}
+
+.count{
+	width: 100px;
+}
+
+.message{
+	    margin: 16px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+#sortable { list-style-type: none; margin: 0; padding: 0; width: 100%; }
+#sortable li { 
+    margin: 20px 15px 20px 20px;
+    padding: 1px;
+    float: left;
+    width: 30%;
+    border: none;
+  }
+
+
+.edit-putton-panel{
+    padding: 10px 30px;
+	
+}
+
+.edit #sortable li{
+	cursor: move;
+	background: yellow;
+	border: 1px dashed #000;
+}
+
+.error{
+	color: red;
+}
+
+.tweet-img{
+	width: 100%;    
+	margin: 10px 0px;
+}
